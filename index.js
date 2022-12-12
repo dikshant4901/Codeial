@@ -12,9 +12,15 @@ app.set('views','./views');
 
 // app.get('/',(req,res));
 
+
+
+
+
 app.listen(port,function(err){
     if(err){
         console.log(`Error in running the server: ${err}`);
     }
     console.log(`Server is running on Port: ${port}`);
 })
+// git pull origin master
+//git push -u origin master
