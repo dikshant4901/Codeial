@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 8000;
+
 // const path =require('path');
 //use express router
-app.use('/',require('./routes'));
+
 
 
 //Set-up the view engine
@@ -12,9 +13,10 @@ app.set('views','./views');
 
 // app.get('/',(req,res));
 
+// app.use(express.urlencoded()); // middleware
+app.use(express.static('assets')); //css and js files 
 
-
-
+app.use('/',require('./routes'));
 
 app.listen(port,function(err){
     if(err){
