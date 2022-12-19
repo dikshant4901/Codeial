@@ -1,0 +1,14 @@
+.header-container{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/EV-Station-Sign-in-Form.webp');
+    background-size: cover;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+
+    width: 99.9vw;  /*96rem*/
+    height: 89.2vh; /*41.5rem*/
+}
+
+#heading{
+    color: brown;
+    font-size: 100px;
+}

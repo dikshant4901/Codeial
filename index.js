@@ -1,10 +1,13 @@
 const express = require('express');
 const app = express();
 const port = 8000;
+const db=require('./config/mongoose');
+const cookieParser=require('cookie-parser');
 
 // const path =require('path');
 //use express router
-
+app.use(express.urlencoded({extended:true}));
+app.use(cookieParser());
 
 
 //Set-up the view engine
