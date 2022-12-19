@@ -6,22 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/loader.css">
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
   </head>
   <body>
-    <div class="loader_bg">
-        <div class="loader"></div>
-    </div>
-
-   
     <nav>
       <div class="nav">
-        
         <label class="logo">
-          <a href="#"><img src="img/logo.jpg" alt="logo" id="logo-img" ></a>
-          EV Locator</label>
+          <a href="#"><img src="img/logo.jpg" alt="logo" id="logo-img" /></a>
+          EV Locator</label
+        >
 
         <ul id="nav-ul">
           <li class="active nav-ul-li"><a href="#">Home</a></li>
@@ -34,27 +30,23 @@
           <i class="fas fa-bars"></i>
         </label>
       </div>
-
-      <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
-      <script>
-        $(window).on('load',function(){
-            $('.loader_bg').fadeToggle();
-
-        })
-        $(document).ready(function () {
-          //Page Ready For JAvascript DOM
-          $("#icon").click(function () {
-            $("#nav-ul").toggleClass("show");
-          });
-        });
-      </script>
     </nav>
     <header>
       <div class="header-container">
-        <div>
-          
-        </div>
+        <div></div>
       </div>
     </header>
+    <script>
+      // $(window).on('load',function(){
+      //     $('.loader_bg').fadeToggle();
+
+      // })
+      $(document).ready(function () {
+        //Page Ready For JAvascript DOM
+        $("#icon").click(function () {
+          $("#nav-ul").toggleClass("show");
+        });
+      });
+    </script>
   </body>
 </html>
